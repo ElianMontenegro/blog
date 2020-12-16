@@ -1,0 +1,69 @@
+.container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 20vh;
+    
+}
+.container .post-card{
+    display: flex;
+    width: 1000px;
+    height: 400px;
+    margin: 20px 0px;
+
+}
+
+.container .post-card .post-card-image-link{
+    width: 700px;
+    height: 100%;
+
+} 
+.container .post-card .post-card-image-link img{
+    width: 700px;
+    height: 100%;
+   
+} 
+.container .post-card .post-card-content{
+    width: 300px;
+    height: 100%;
+    background-color: transparent;
+}
+.container .post-card .post-card-content a{
+    text-decoration: none;
+}
+.container .post-card .post-card-content .post-card-content-link{
+    color: white;
+} 
+
+.container .post-card .post-card-content .post-card-content-link .post-card-header{ 
+    display: flex;
+    justify-content: center;
+    height: 179px;
+    width: 100%;
+    background-color: transparent;
+    text-align: center;
+    padding: 0px 10px;
+    
+    
+} 
+
+.container .post-card .post-card-content .post-card-content-link .post-card-header .post-card-title { 
+    font-size: 25px;
+    
+    
+} 
+
+.container .post-card .post-card-content .post-card-content-link .post-card-resume{ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 271px;
+    width: 100%;
+    background-color: transparent;
+    font-size: 1.3rem;
+    text-align: center;
+    padding: 0px  10px;
+} 
+/* Fin portada */

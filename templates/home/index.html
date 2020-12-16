@@ -7,6 +7,7 @@ Blog Prodigy
 
 {% block css %}
 <link rel="stylesheet" href="{% static 'css/home/index.css' %}">
+
 {% endblock css %}
 
 {% block content %}
@@ -52,7 +53,7 @@ Blog Prodigy
                         <h2 class="post-card-title">{{home.tittle}}</h2>
                     </header>
                     <section class="post-card-resume">
-                        <p> {{ home.resume }}</p>
+                        <p> {{ home.resume |truncatechars:150 }}</p>
                     </section>
                 </a>
             </div>
@@ -75,7 +76,7 @@ Blog Prodigy
                         <h2 class="post-card-title">{{ home_medium.tittle }}</h2>
                     </header>
                     <section class="post-card-resume">
-                        <p>{{ home_medium.resume }}</p>
+                        <p>{{ home_medium.resume|truncatechars:165 }}</p>
                     </section>
                 </a>
             </div>
