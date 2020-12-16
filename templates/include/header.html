@@ -1,0 +1,45 @@
+{% extends "base.html" %}
+{% load  static %}
+
+
+{% block css %}
+<link rel="stylesheet" href="{% static 'css/include/header.css' %}">
+
+{% endblock css %}
+
+{% block content %}
+<header class="header">
+  <div class="container">
+    <nav class="navegation">
+      <a class="navegation-link" href="{% url 'home_app:home' %}"><img src="{% static 'img/Prodigy.png' %}" alt=""></a> 
+      <button class="navegation-list-blog"><a href="{% url 'blog_app:list-blog'  %}">Blogs</a></button>
+      <button class="navegation-suscriber">Suscriber</button>
+    </nav>
+  </div>
+</header>
+
+<div class="modal-container">
+  <div class="modal modal-close">
+      <p class="close">X</p>
+      <div class="modal-text">
+        <h1>Suscribe to the Prodigy Blog</h1>
+
+      </div>
+      <form class="form" method="post" action=" {% url 'home_app:add_suscriber' %} "> {% csrf_token %}
+        <input  clase="modal-input" type="email" id="email" name="email" placeholder=" youare@example.com">
+        <button class="modal-send" type="submit">Suscribe</button>
+      </form>
+      {% for error in form.non_field_errors %}
+            <p>
+                {{ error|escape }}
+            </p>
+      {% endfor %}
+  </div>
+</div>
+
+
+{% endblock content %}
+
+{% block js %}
+<script src="{% static 'js/suscriber.js' %}"></script> 
+{% endblock js %}

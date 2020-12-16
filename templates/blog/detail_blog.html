@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+
+{% load static %}
+{% block title %}
+Blog Prodigy {{ blog.tittle}}
+{% endblock title %}
+
+
+{% block description %}
+<meta name="description" content="{{ blog.resume }}">
+{% endblock description %}
+
+{% block css %}
+<link rel="stylesheet" href="{% static 'css/blog/detail.css' %}">
+{% endblock css %}
+
+{% block content %}
+{% include 'include/header.html' %}
+<div class="container">
+   <article class="post-full">
+       <header class="post-full-header">
+            <h1 class="post-full-title"> {{blog.tittle}}</h1>
+            <p class="post-full-resume">{{blog.resume}}</p>
+       </header>
+       <figure class="post-full-image"> <img src="{{ blog.image }}" alt=""> </figure>
+       <section class="post-full-content">{{blog.content|safe}}</section> -->
+   </article>  
+</div>
+
+{% endblock content %}

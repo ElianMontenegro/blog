@@ -1,0 +1,492 @@
+body{
+    margin: 0px;
+    background: #191b1f;
+    padding: 100px 0px;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    flex-wrap: wrap;
+
+    
+}
+/* bar search */
+.container  .search{
+    display: flex;
+    align-items: center;
+    width: 89%;
+    height: 70px;
+    flex-wrap: wrap;
+
+    
+}
+.container  .search .input{
+    
+    width: 40%;
+    height: 35px;
+    background-color: transparent;
+    border: 0;
+    outline: none;
+    border-bottom: 1px solid white;
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+
+    
+}
+.container  .search .lupa{
+   
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    
+}
+.container  .search .lupa img{
+   
+    height: 25px;
+    width: 25px;
+    
+}
+/* end bar search */
+
+/* container  list blog */
+.container .search-and-list {
+    display: flex;
+    width: 1450px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 90vh;
+    background-color: transparent;
+    flex-wrap: wrap;
+
+    
+}
+.container .search-and-list .box-card-small{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    background-color: transparent;
+    margin: 30px 0px;
+    flex-wrap: wrap;
+    
+}
+.container .search-and-list .box-card-small a{
+    text-decoration: none;
+
+    
+}
+.container .search-and-list .box-card-small .post-card-small{
+    display: flex;
+    flex-direction: column;
+    width: 310px;
+    height: 450px;
+    margin: 0px 20px;
+    border-bottom: 0.5px solid gray;
+    flex-wrap: wrap;
+
+   
+}
+
+.container .search-and-list .box-card-small .post-card-small .post-card-image-link{
+    width: 100%;
+    height: 200px;
+    background-color: blue;
+} 
+.container .search-and-list .box-card-small .post-card-small .post-card-image-link img{
+    width: 100%;
+    height: 200px;
+    
+} 
+.container .search-and-list .box-card-small .post-card-small .post-card-content{
+    width: 100%;
+    height: 250px;
+}
+.container .search-and-list .box-card-small .post-card-small .post-card-content .post-card-content-link{
+    color: white;
+} 
+
+.container .search-and-list .box-card-small .post-card-small .post-card-content .post-card-content-link .post-card-header{ 
+    display: flex;
+    justify-content: center;
+    height: 100px;
+    width: 100%;
+    background-color: transparent;
+    
+    
+} 
+.container .search-and-list .box-card-small .post-card-small .post-card-content .post-card-content-link .post-card-header .post-card-title{ 
+    font-size: 20px;
+    text-align: center;
+    
+} 
+
+.container .search-and-list .box-card-small  .post-card-small .post-card-content .post-card-content-link .post-card-resume{ 
+    display: flex;
+    justify-content: center;
+    height: 150px;
+    width: 100%;
+    align-items: center;
+    background-color: transparent;
+    font-size: 1.0rem;
+    text-align: center;
+    padding: 0px  5px;
+    
+} 
+/* end container search and list blog */
+
+/* category*/
+.container .list-category{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 90vh;
+    width: 250px;
+    background-color: transparent;
+    border-left: 1px solid gray;
+    
+}
+.container .list-category .list-category-title{
+    margin-top: 30px ;
+    color: white;
+
+   
+}
+.container .list-category .list-category-list {
+    list-style: none;
+    font-size: 28px;
+    margin: 0;
+    margin-right:18px ;
+    
+   
+}
+.container .list-category .list-category-list a{
+    text-decoration: none;
+    color: white;
+    
+}
+/* end category*/
+
+
+
+
+@media only screen and  (max-width:1410px){
+    .container .list-category{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        height: 100vh;
+        width: 250px;
+        background-color: transparent;
+        border-left: 1px solid gray;
+        margin-top: 3pc;
+        
+    }
+    
+    /* end responsive category */
+
+    .container .search-and-list {
+        display: flex;
+        width: 900px;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        height: 90vh;
+        flex-wrap: wrap;
+        margin-top: 3pc;
+    
+    
+        
+    }
+    /* end responsive listy */
+    .container  .search{
+        display: flex;
+        align-items: center;
+        width: 80%;
+        height: 70px;
+        flex-wrap: wrap;
+    
+        
+    }
+   
+    
+} 
+@media only screen and  (max-width:1151px){
+    .container .list-category{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        height: 100vh;
+        width: 250px;
+        background-color: transparent;
+        border-left: 1px solid gray;
+        
+        
+    }
+    
+    /* end responsive category */
+
+    .container .search-and-list {
+        display: flex;
+        width: 695px;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        height: 100vh;
+        background-color: transparent;
+        flex-wrap: wrap;
+        margin-top: 5pc;
+   
+    
+        
+    }
+    /* end responsive listy */
+    .container  .search .input{
+    
+        width: 70%;
+        height: 35px;
+        background-color: transparent;
+        border: 0;
+        outline: none;
+        border-bottom: 1px solid white;
+        font-size: 15px;
+        font-weight: bold;
+        color: white;
+    
+        
+    }
+    /* end responsive search */
+
+    .container .search-and-list .box-card-small .post-card-small{
+        display: flex;
+        flex-direction: column;
+        width: 310px;
+        height: 450px;
+        margin: 0px 10px;
+        border-bottom: 0.5px solid gray;
+        flex-wrap: wrap;
+    
+       
+    }
+   
+    
+} 
+
+
+@media only screen and  (max-width:1014px){
+    .container .list-category{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        height: 100vh;
+        width: 250px;
+        background-color: transparent;
+        border-left: 1px solid gray;
+        margin-top: 5pc;
+        
+    }
+    
+    /* end responsive category */
+
+    .container .search-and-list {
+        display: flex;
+        width: 700px;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        height: 90vh;
+        background-color: transparent;
+        flex-wrap: wrap;
+        margin-top: 5pc;
+
+    
+        
+    }
+    /* end responsive listy */
+    .container  .search{
+        display: flex;
+        align-items: center;
+        width: 91%;
+        height: 70px;
+        flex-wrap: wrap;
+    
+        
+    }
+   
+    
+} 
+@media only screen and  (max-width:945px){
+    .container .list-category{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        height: 50vh;
+        width: 250px;
+        background-color: transparent;
+        border-left: 1px solid gray;
+        margin-top: 11pc;
+        
+    }
+    
+    /* end responsive category */
+
+    .container .search-and-list {
+        display: flex;
+        width: 700px;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        height: 90vh;
+        background-color: transparent;
+        flex-wrap: wrap;
+        margin-top: 5pc;
+
+    
+        
+    }
+    .container .search-and-list .box-card-small .post-card-small{
+        display: flex;
+        flex-direction: column;
+        width: 310px;
+        height: 450px;
+        margin-bottom: 5pc;
+        border-bottom: 0.5px solid gray;
+        flex-wrap: wrap;
+    
+       
+    }
+    /* end responsive listy */
+    .container  .search{
+        display: flex;
+        align-items: center;
+        width: 72%;
+        height: 70px;
+        flex-wrap: wrap;
+    
+        
+    }
+   
+    
+} 
+
+
+@media only screen and  (max-width:415px){
+    .container .list-category{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        height: 60vh;
+        width: 250px;
+        background-color: transparent;
+        border-left: 1px solid gray;
+        margin-top: 87pc;
+        
+    }
+    
+    /* end responsive category */
+
+    .container .search-and-list {
+        display: flex;
+        width: 300px;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        height: 100vh;
+        flex-wrap: wrap;
+        margin-top: 2pc;
+
+    
+        
+    }
+
+    
+    /* end responsive listy */
+    .container  .search{
+        display: flex;
+        align-items: center;
+        width: 67%;
+        height: 70px;
+        flex-wrap: wrap;
+    
+        
+    }
+    .container  .search .input{
+    
+        width: 84%;
+        height: 35px;
+        background-color: transparent;
+        border: 0;
+        outline: none;
+        border-bottom: 1px solid white;
+        font-size: 15px;
+        font-weight: bold;
+        color: white;
+    
+        
+    }
+   
+    
+} 
+
+
+@media only screen and  (max-width:376px){
+    .container .list-category{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        height: 60vh;
+        width: 250px;
+        background-color: transparent;
+        border-left: 1px solid gray;
+        margin-top: 95pc;
+        
+    }
+    
+    /* end responsive category */
+
+    .container .search-and-list {
+        display: flex;
+        width: 300px;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        height: 100vh;
+        flex-wrap: wrap;
+        margin-top: 2pc;
+
+    
+        
+    }
+
+    
+    /* end responsive listy */
+    .container  .search{
+        display: flex;
+        align-items: center;
+        width: 77%;
+        height: 70px;
+        flex-wrap: wrap;
+    
+        
+    }
+    .container  .search .input{
+    
+        width: 83%;
+        height: 35px;
+        background-color: transparent;
+        border: 0;
+        outline: none;
+        border-bottom: 1px solid white;
+        font-size: 15px;
+        font-weight: bold;
+        color: white;
+    
+        
+    }
+   
+    
+} 

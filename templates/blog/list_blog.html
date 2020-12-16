@@ -1,0 +1,56 @@
+{% extends "base.html" %}
+
+{% load static %}
+{% block title %}
+Blog Prodigy 
+{% endblock title %}
+
+{% block css %}
+<link rel="stylesheet" href="{% static 'css/blog/list_blog.css' %}">
+{% endblock css %}
+
+{% block content %}
+{% include 'include/header.html' %}
+<div class="container">
+    <form method="GET" class="search">
+            <input class="input" type="text" id='kword' name='kword' placeholder="Search..">
+            <button class="lupa" type="submit"><img src="{% static 'img/search.png' %}" alt=""></button>
+        </form>
+    <div class="search-and-list">
+        <div class="box-card-small">
+            {% for blog in blogs %}
+            <article class="post-card-small">
+                <a class="post-card-image-link" href="{% url 'blog_app:detail-blog' blog.slug %}">
+                    <img src="{{blog.image}}" alt="">
+                </a>
+                <div class="post-card-content">
+                    <a class="post-card-content-link" href="{% url 'blog_app:detail-blog' blog.slug %}">
+                        <header class="post-card-header">
+                            <h2 class="post-card-title">{{blog.tittle}}</h2>
+                        </header>
+                        <section class="post-card-resume">
+                            <p> {{ blog.resume }}</p>
+                        </section>
+                    </a>
+                </div>
+            </article>
+            {% empty %}
+                <!-- es como un else -->
+                <h2 style="color:white">No hay resultados</h2>
+            {% endfor %}
+        </div>
+    </div>
+    <div class="list-category">
+        <h1 class="list-category-title">Categories</h1>
+        <ul class="list-category-list">
+            {% for category in categories %}
+                <li><a href="?category={{ category.name }}">{{ category.name }}</a></li>
+            {% endfor %}
+             <li><a href="{% url 'blog_app:list-blog'  %}">Todo</a></li>
+        </ul>
+    </div>
+    
+</div>
+
+
+{% endblock content %}
