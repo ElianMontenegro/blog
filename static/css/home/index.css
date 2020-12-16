@@ -611,12 +611,12 @@ body{
         padding: 0px 10px;
     } 
     .container3 .box-card-medium .post-card-medium .post-card-content .post-card-content-link .post-card-header .post-card-title{ 
-        font-size: 1.2rem;
+        font-size: 1.1rem;
     } 
     
     .container3 .box-card-medium  .post-card-medium .post-card-content .post-card-content-link .post-card-resume{ 
         flex:  2;
-        font-size: 1.1rem;
+        font-size: 1.0rem;
         text-align: center;
         padding: 0px 10px;
         
