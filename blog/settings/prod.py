@@ -2,16 +2,16 @@ from .base import *
 
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['blogprodigy.herokuapp.com']
 
 
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME':'dbblog2',
-        'USER': 'elian',
-        'PASSWORD': 'OLAVARRIA18491',
-        'HOST': 'localhost',
+        'NAME':'d9pok7grnkjus8',
+        'USER': 'epjggjlchyjqqc',
+        'PASSWORD': '21ee8e66f5ed58098b6ceb6cf65324725cfcb1871381c9bdb0bda752851a26b4',
+        'HOST': 'ec2-3-95-124-37.compute-1.amazonaws.com',
         'PORT': '5432',
     }
 }
