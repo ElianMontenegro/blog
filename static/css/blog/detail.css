@@ -55,6 +55,9 @@ body{
     height: 100%;
     object-fit: cover;
 }
+.container .post-full .post-full-content{
+    width: 100%;
+}
 
 
 /* responsive */
@@ -164,7 +167,7 @@ body{
     }
     
     .container .post-full .post-full-header .post-full-title {
-        font-size: 1.7rem;
+        font-size: 1.8rem;
     }
     
     .container .post-full .post-full-header  .post-full-resume{
