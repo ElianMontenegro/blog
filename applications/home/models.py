@@ -5,10 +5,8 @@ from django.db import models
 from model_utils.models import TimeStampedModel
 
 class Suscriber(TimeStampedModel):
-    
-
     email = models.EmailField("email")
-
+    
     class Meta:
 
         verbose_name = 'Suscriber'

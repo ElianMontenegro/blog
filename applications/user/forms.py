@@ -33,8 +33,6 @@ class UserRegisterForm(forms.ModelForm):
             'full_name',
         )
         
-
-  
     def clean_password2(self):
         if self.cleaned_data['password1'] != self.cleaned_data['password2']:
             self.add_error('password2', 'Las contraseñas no son iguales')
@@ -66,9 +64,7 @@ class LoginForm(forms.Form):
         cleaned_data = super(LoginForm, self).clean()
         
         email = self.cleaned_data['email']
-        password = self.cleaned_data['password']
-
-            
+        password = self.cleaned_data['password']  
 
         if not authenticate(email=email, password=password):
             raise forms.ValidationError('Los datos de usuario no son correctos')

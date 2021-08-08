@@ -21,7 +21,6 @@ from .forms import (
 from .models import User
 # 
 
-
 class UserRegisterView(FormView):
     template_name = 'user/register.html'
     form_class = UserRegisterForm
@@ -44,7 +43,6 @@ class LoginUser(FormView):
 
     def form_valid(self, form):
         user = authenticate(
-            #con el autenticate se verifica que exista este usuario
             email=form.cleaned_data['email'],
             password=form.cleaned_data['password'],
         )

@@ -15,5 +15,4 @@ urlpatterns = [
         views.BlogListView.as_view(),
         name='list-blog',
     ),
-   
 ]

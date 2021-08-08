@@ -22,9 +22,9 @@ close.addEventListener("click",function(){
 });
 
 window.addEventListener("click", function(e){
-    if(e.target == modalC){
+    if (e.target == modalC){
         modal.classList.toggle("modal-close");
-    
+
         setTimeout(function(){
         modalC.style.opacity = "0";
         modalC.style.visibility = "hidden";

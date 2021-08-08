@@ -5,7 +5,6 @@ from django.contrib.auth.models import AbstractBaseUser, PermissionsMixin
 from .managers import UserManager
 
 class User(AbstractBaseUser, PermissionsMixin):
-
     full_name = models.CharField("Nombre Completo", max_length=50)
     email = models.EmailField(unique=True)
 

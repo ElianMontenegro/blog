@@ -1,6 +1,5 @@
 from datetime import datetime, timedelta
 #
-
 from django.db import models
 from django.conf import settings
 from django.template.defaultfilters import slugify
@@ -19,30 +18,24 @@ class Category(TimeStampedModel):
         max_length=30,
         unique = True
     )
-
     class Meta:
-
         verbose_name = 'categoria'
         verbose_name_plural = 'categorias'
-
     def __str__(self):
         return self.name
 
 class Tag(TimeStampedModel):
     """Model definition for Tag."""
-
     name = models.CharField(
         'nombre', 
         max_length=30
     )
-
     class Meta:
         verbose_name = 'Tag'
         verbose_name_plural = 'Tags'
 
     def __str__(self):
         return self.name
-
 
 class Blog(TimeStampedModel):
 
